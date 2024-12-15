@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  app:
+    image: deepseek_code_review 
+    ports:
+      - "4444:5000"
+    environment:
+      APP_PORT: 5000
+      HOST: "0.0.0.0"
+      GITHUB_TOKEN: ''
+      GITLAB_TOKEN: ''
+      DEEPSEEK_TOKEN: 'sk-'
+      GITLAB_URL: 'https://mygitlab.ru'
