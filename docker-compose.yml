@@ -1,7 +1,9 @@
 version: "3.9"
 services:
   app:
-    image: deepseek_code_review 
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "4444:5000"
     environment:
